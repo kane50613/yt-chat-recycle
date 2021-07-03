@@ -5,7 +5,8 @@ body {
 	height: 5rem;
 }
 
-.title {
+.title,
+.title > a {
 	display: flex;
 	justify-items: center;
 	align-items: center;
