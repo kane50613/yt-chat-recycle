@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	padding: 1rem 1.5rem;
+	width: 19rem;
+	height: 5rem;
+}
+
+.title {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+
+.title > * {
+	display: inline;
+}
+
+.title > h1 {
+	margin: 0 .5rem;
+	white-space: nowrap;
+}
+
+.title > img,
+.title > a > img {
+	margin: auto 0;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+td {
+	padding-right: 1rem;
+}
