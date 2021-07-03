@@ -52,4 +52,10 @@ td {
 
 .credit > .github--url {
 	color: #007393;
+	border-bottom: 1px solid transparent;
+	transition: .5s;
+}
+
+.credit > .github--url:hover {
+	border-bottom: 1px solid #007393;
 }
