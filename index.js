@@ -19,11 +19,16 @@ async function init() {
 		return init()
 	}
 
-	let inv = setInterval(() => {
+	let inv = setInterval(async () => {
+		if(!await get('yt_chat_recycle_enabled', true)) {
+			clearInterval(inv)
+			m = null
+			return console.log(`${prefix} extension disabled :(`)
+		}
 		if(!getChat()) {
 			console.log(`${prefix} chat not found`)
-			init()
 			clearInterval(inv)
+			await init()
 		}
 	}, 1000)
 
