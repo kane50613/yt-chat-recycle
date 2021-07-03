@@ -9,12 +9,12 @@ async function init() {
 		return console.log(`${prefix} extension disabled :(`)
 
 	if(!getFrame()) {
-		console.log(`${prefix} frame not found`)
+		// console.log(`${prefix} frame not found`)
 		await sleep(5000)
 		return init()
 	}
 	if(!getChat()) {
-		console.log(`${prefix} no Youtube chat found`)
+		// console.log(`${prefix} no Youtube chat found`)
 		await sleep(5000)
 		return init()
 	}
@@ -23,12 +23,14 @@ async function init() {
 		if(!await get('yt_chat_recycle_enabled', true)) {
 			clearInterval(inv)
 			m = null
-			return console.log(`${prefix} extension disabled :(`)
+			console.log(`${prefix} extension disabled :(`)
+			return init()
 		}
 		if(!getChat()) {
+			m = null
 			console.log(`${prefix} chat not found`)
 			clearInterval(inv)
-			await init()
+			return init()
 		}
 	}, 1000)
 
