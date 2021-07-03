@@ -8,7 +8,7 @@ document.querySelector('iframe.style-scope.ytd-live-chat-frame')
 
 	console.log(`${prefix} start recycling!`)
 
-	let max = 15, count = 0
+	let max = 5, count = 0
 
 	let m = new MutationObserver(e => {
 		count = getChat()?.children?.length
