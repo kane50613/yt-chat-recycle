@@ -1,8 +1,14 @@
+* {
+	text-decoration: none;
+	text-underline: none;
+	outline: none;
+}
+
 body {
 	margin: 0;
 	padding: 1rem 1.5rem;
 	width: 19rem;
-	height: 5rem;
+	height: 6rem;
 }
 
 .title,
@@ -28,6 +34,22 @@ body {
 	height: 1.5rem;
 }
 
+tr {
+	padding: 0;
+}
+
 td {
 	padding-right: 1rem;
+}
+
+#max {
+	background: none;
+}
+
+.credit {
+	font-weight: 500;
+}
+
+.credit > .github--url {
+	color: #007393;
 }
