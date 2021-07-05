@@ -1,8 +1,8 @@
 # ![YouTube Chat Recycle](icons/icon_48.png) YouTube Chat Recycle
-Automatic recycle old YouTube Livestream chat for reducing ram usage
+A Chrome extension that automatic recycle old YouTube Livestream chat for reducing ram usage
 
 ---
-### How does it works
+### How does it work
 
 YouTube live chat does a huge impact to ram usage, to reduce ram usage,
 it automatically removes old comments to make it display less comments
